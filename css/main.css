@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#contenedorMenu #menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+#contenedorMenu #menu ul li{
+    background-color: orange;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+}
+#contenedorMenu #menu ul li a{
+    text-decoration: none;
+}
+
+#contenedorMenu h1{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main h2{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+main section #contenedorOfertas{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main section #contenedorOfertas #tituloOfertas{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+main section #contenedorOfertas #tituloOfertas h3{
+    margin-bottom: 1rem;
+}
+
+main section #contenedorOfertas #contenedorJuegos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main section #contenedorOfertas #contenedorJuegos .card{
+  width: 12rem;
+  height: 20rem;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+main section #contenedorOfertas #contenedorJuegos .card img{
+    margin-bottom: 0.5rem;
+    width: 10rem;
+    height: 16rem;
+}
+
+main section #contenedorOfertas #contenedorJuegos .card .precio{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: green;
+}
+
+.tachar{
+    text-decoration: line-through;
+    color: red
+}
