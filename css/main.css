@@ -2,14 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
+
 body{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
+/* Estilos menu */
 #contenedorMenu #menu ul{
     display: flex;
     list-style: none;
@@ -32,6 +33,35 @@ body{
 #contenedorMenu h1{
     text-align: center;
 }
+
+/* Estilos productos */
+
+#listaProductos{
+    text-align: center;
+}
+
+#listaProductos ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid orange;
+    margin: 1rem;
+}
+#listaProductos ul li{
+    padding: 0.5rem;
+    margin: 1rem;
+    border: 1px solid orange;
+    background-color: rgb(230, 199, 143);
+    border-radius: 1rem;
+}
+#listaProductos ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos contenedor juegos */
+
 main{
     display: flex;
     flex-direction: column;
@@ -43,28 +73,28 @@ main h2{
     font-size: 1.2rem;
 }
 
-main section #contenedorOfertas{
+main section .contenedorPrincipal{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-main section #contenedorOfertas #tituloOfertas{
+main section .contenedorPrincipal .titulo{
     text-align: center;
     font-size: 1.2rem;
 }
 
-main section #contenedorOfertas #tituloOfertas h3{
+main section .contenedorPrincipal .titulo h3{
     margin-bottom: 1rem;
 }
 
-main section #contenedorOfertas #contenedorJuegos{
+main section .contenedorPrincipal #contenedorJuegos{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-main section #contenedorOfertas #contenedorJuegos .card{
+main section .contenedorPrincipal #contenedorJuegos .card{
   width: 12rem;
   height: 20rem;
   background-color: orange;
@@ -76,21 +106,42 @@ main section #contenedorOfertas #contenedorJuegos .card{
   border-radius: 1rem;
 }
 
-main section #contenedorOfertas #contenedorJuegos .card img{
+main section .contenedorPrincipal #contenedorJuegos .card img{
     margin-bottom: 0.5rem;
     width: 10rem;
     height: 16rem;
 }
 
-main section #contenedorOfertas #contenedorJuegos .card .precio{
+main section .contenedorPrincipal #contenedorJuegos .card .precio{
     display: flex;
     width: 80%;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 1.2rem;
     color: green;
 }
 
-.tachar{
-    text-decoration: line-through;
-    color: red
+/* Estilos contacto */
+#contacto h1{
+    text-align: center;
+}
+
+#contacto  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto div {
+    border: 2px solid orange;
+    margin: 1rem;
+}
+
+#contacto div form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#contacto div form label {
+    padding: 0.5rem;
 }
